@@ -8,8 +8,6 @@ This system generates a **2D duct map** from a moving camera video by processing
 
 ## Demo
 
-> Recommended: add a screenshot so reviewers can understand the outcome instantly.
-
 ![Final Map](output/maps/final_map.png)
 
 ---
@@ -42,12 +40,15 @@ This system generates a **2D duct map** from a moving camera video by processing
 │   ├── generate_map.py
 │   └── track_motion.py
 └── main.py                # Orchestrator
+```
+
+---
 
 ## Prerequisites
 - Python 3.x
 - Dependencies:
 
-```bash
+```bash 
 pip install opencv-python numpy matplotlib
 ```
 
@@ -68,10 +69,11 @@ python main.py
 
 ## Output
 After completion, results are saved under output/:
-	•	output/frames/ — extracted frames
-	•	output/detected/ — wall/line detection visualizations
-	•	output/trajectory/ — raw .npy data + trajectory plots
-	•	output/maps/final_map.png — final combined 2D map
+- output/frames/ — extracted frames
+- output/detected/ — wall/line detection visualizations
+- output/trajectory/ — raw .npy data + trajectory plots
+- output/maps/final_map.png — final combined 2D map
 
+---
 
 I’m eager to extend this prototype with more advanced AI/Deep Learning methods and support Garage lab development and maintenance.
